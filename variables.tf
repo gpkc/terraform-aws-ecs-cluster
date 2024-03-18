@@ -2,6 +2,8 @@ variable "cluster_name" {
   description = "Cluster name."
 }
 
+variable "capacity_rebalance" {}
+
 variable "nodes_with_public_ip" {
   description = "Assign public IP addresses to ECS cluster nodes. Useful when an ECS cluster hosted in internet facing networks."
   default     = false
