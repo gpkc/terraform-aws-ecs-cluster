@@ -33,7 +33,7 @@ resource "aws_launch_template" "node" {
 
   network_interfaces {
     associate_public_ip_address = local.public
-    security_groups             = local.sg_ids
+    # security_groups             = local.sg_ids
   }
 
   iam_instance_profile {
